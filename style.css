@@ -22,6 +22,49 @@ body {
     margin-bottom: 1rem;
 }
 
+.new-task-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+label[for='new-task'] {
+    display: block;
+    margin-right: 15px;
+}
+
+input,
+button {
+    outline: none;
+}
+
+input[type="text"] {
+    margin: 0;
+    font-size: 18px;
+    line-height: 18px;
+    height: 21px;
+    padding: 0 9px;
+    border: 1px solid #dDd;
+    background: #FFF;
+    border-radius: 6px;
+    color: #888;
+}
+
+button {
+    background: none;
+    border: 0px;
+    color: #888;
+    font-size: 15px;
+    width: 60px;
+    font-family: 'Lato', sans-serif;
+    cursor: pointer;
+}
+
+button:hover {
+    color: #2c95de;
+    font-weight: bold;
+}
+
 .col-header {
     text-align: center;
     text-transform: uppercase;
@@ -52,6 +95,10 @@ body {
 .placeholder {
     width: 150px;
     height: 66px;
+}
+
+.progress_bar {
+    margin-top: 40px;
 }
 
 .start {
