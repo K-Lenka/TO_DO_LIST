@@ -11,15 +11,14 @@
 
 <body>
     <h1>TO DO LIST</h1>
-    <section>
-
+    <form action="/nowhere">
         <div class="new-task-wrapper">
             <label for="new-task">Add Item</label>
-            <input class="task new-task__input" type="text">
+            <input class="task new-task__input" type="text" id="new_task" name="new_task">
             <button>Add</button>
         </div>
-    </section>
-    <div>
+    </form>
+    <div id="todo">
         <div class="row progress_bar">
             <div class="col-header start">Start</div>
             <div class="col-header progress">In process</div>
