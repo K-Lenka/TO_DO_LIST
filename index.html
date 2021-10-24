@@ -10,30 +10,31 @@
 </head>
 
 <body>
-    <h1>TO DO LIST</h1>
-    <form action="/nowhere">
-        <div class="new-task-wrapper">
-            <label for="new-task">Add Item</label>
-            <input class="task new-task__input" type="text" id="new_task" name="new_task">
-            <button>Add</button>
-        </div>
-    </form>
-    <div id="todo">
-        <div class="row progress_bar">
-            <div class="col-header start">Start</div>
-            <div class="col-header progress">In process</div>
-            <div class="col-header done">Done</div>
-        </div>
-
-        <div class="row">
-            <div class="placeholder">
-                <div class="item" draggable="true">Start a new project</div>
+    <div class="wrapper">
+        <h1>TO DO LIST</h1>
+        <form action="/nowhere">
+            <div class="new-task-wrapper">
+                <label for="new-task"></label>
+                <input class="task new-task__input" type="text" id="new_task" name="new_task" placeholder="new task" maxlength="27">
+                <button>Add</button>
             </div>
-            <div class="placeholder"></div>
-            <div class="placeholder"></div>
+        </form>
+        <div class="todo-list" id="todo">
+            <div class="row progress_bar">
+                <div class="col-header start">Start</div>
+                <div class="col-header progress">In process</div>
+                <div class="col-header done">Done</div>
+            </div>
+
+            <div class="row">
+                <div class="placeholder">
+                    <div class="item" draggable="true">Start a new project</div>
+                </div>
+                <div class="placeholder"></div>
+                <div class="placeholder"></div>
+            </div>
         </div>
     </div>
-
 
     <script src="./app.js"></script>
 </body>

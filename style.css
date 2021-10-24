@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap');
 * {
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Rubik', sans-serif;
     background-color: #e5e5e5;
     display: flex;
     padding-top: 5rem;
@@ -12,6 +12,19 @@ body {
     margin: 0;
     flex-direction: column;
     align-items: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-align: center;
+    background: linear-gradient( 90deg, #ff85e4 0%, #229efd 179.25%);
+    border-radius: 10px;
+    border: 2px dotted #85f8b4;
+}
+
+.wrapper {
+    margin: 0 auto;
 }
 
 .row {
@@ -49,6 +62,7 @@ input[type="text"] {
     background: #FFF;
     border-radius: 6px;
     color: #888;
+    width: 211px;
 }
 
 button {
@@ -78,15 +92,16 @@ button:hover {
 
 .item {
     width: 150px;
-    height: 66px;
+    height: auto;
     border: 1px solid #eee;
     box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
     border-radius: 20px;
     background: #f7f6f7;
-    padding: 0.8rem 1rem;
+    padding: 0.8rem;
     color: #828282;
     text-align: center;
     cursor: grab;
+    overflow-wrap: break-word;
 }
 
 .item:active {
@@ -96,10 +111,11 @@ button:hover {
 .placeholder {
     width: 150px;
     height: 66px;
+    margin-bottom: 1rem;
 }
 
 .progress_bar {
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
 .start {
