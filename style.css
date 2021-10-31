@@ -102,6 +102,7 @@ button:hover {
     text-align: center;
     cursor: grab;
     overflow-wrap: break-word;
+    position: relative;
 }
 
 .item:active {
@@ -142,4 +143,36 @@ button:hover {
     border-radius: 20px;
     border: 1px solid rgb(195 195 195 / 26%);
     box-shadow: 0px -3px 5px rgb(195 195 195);
+}
+
+.delete {
+    position: absolute;
+    right: 14px;
+    top: 1px;
+    width: 16px;
+    height: 15px;
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.delete:hover {
+    opacity: 1;
+}
+
+.delete:before,
+.delete:after {
+    position: absolute;
+    left: 13px;
+    content: ' ';
+    height: 13px;
+    width: 2px;
+    background-color: #bf6262;
+}
+
+.delete:before {
+    transform: rotate(45deg);
+}
+
+.delete:after {
+    transform: rotate(-45deg);
 }

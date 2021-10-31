@@ -23,19 +23,24 @@ const addNewTaskElement = function(taskString) {
     const newPlaceholder1 = document.createElement('div');    
     const newPlaceholder2 = document.createElement('div');
     const newPlaceholder3 = document.createElement('div');
+    const newSpan = document.createElement('span');
 
-    newTaskRow.className = 'row';    
+    newTaskRow.className = 'row'; 
+    newTaskRow.id = 'removable1'   
     newItem.innerText = `${taskString}`;
     newItem.className = 'item';
     newItem.draggable = 'true';
     newPlaceholder1.className = 'placeholder';
     newPlaceholder2.className = 'placeholder';
     newPlaceholder3.className = 'placeholder';
+    newSpan.className = 'delete';
+    newSpan.addEventListener('click', () => deleteTask(newTaskRow))
 
 
     todo.appendChild(newTaskRow);
     newTaskRow.appendChild(newPlaceholder1);
     newPlaceholder1.appendChild(newItem);
+    newItem.appendChild(newSpan);
     newTaskRow.appendChild(newPlaceholder2);
     newTaskRow.appendChild(newPlaceholder3);
 
@@ -107,4 +112,15 @@ function dragdrop(event, item) {
     event.target.append(item)
 }
 
+//Delete task.
+
+const deleteBtn = document.querySelector('.delete');
+const divRemovable = document.querySelector('#removable0')
+
+deleteBtn.addEventListener('click', () => deleteTask(divRemovable))
+
+function deleteTask(element) {
+    element.remove()
+
+}
 
